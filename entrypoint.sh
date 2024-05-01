@@ -100,4 +100,5 @@ function main() {
 }
 
 cd "$GITHUB_WORKSPACE" || exit 2
+shopt -s globstar
 main
