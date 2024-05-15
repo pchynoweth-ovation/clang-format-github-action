@@ -1,6 +1,6 @@
 FROM ubuntu:24.04
 
-RUN apt-get update && apt-get install --no-install-recommends software-properties-common wget -y \
+RUN apt-get update && apt-get install software-properties-common wget -y \
     && wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key| apt-key add - \
     && add-apt-repository 'deb http://apt.llvm.org/mantic/ llvm-toolchain-mantic-18 main' \
     && apt-get update \
