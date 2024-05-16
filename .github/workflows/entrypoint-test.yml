@@ -16,7 +16,7 @@ jobs:
   test-entrypoint:
     runs-on: ubuntu-22.04
     container:
-      image: silkeh/clang:14
+      image: ghcr.io/pchynoweth-ovation/docker-clang:main
     steps:
     - uses: actions/checkout@v2
     - name: Basic command works
