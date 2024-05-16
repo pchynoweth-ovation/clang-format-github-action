@@ -1,6 +1,4 @@
-FROM silkeh/clang:18
-
-LABEL maintainer="RafikFarhad<rafikfarhad@gmail.com>"
+FROM ghcr.io/pchynoweth-ovation/docker-clang:main
 
 COPY entrypoint.sh /entrypoint.sh
 
