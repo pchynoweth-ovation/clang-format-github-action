@@ -18,7 +18,7 @@ jobs:
     container:
       image: ghcr.io/pchynoweth-ovation/docker-clang:main
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v4
     - name: Basic command works
       env:
         INPUT_SOURCES: 'examples/*.c'
