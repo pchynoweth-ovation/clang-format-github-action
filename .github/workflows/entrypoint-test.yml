@@ -25,6 +25,7 @@ jobs:
         INPUT_EXCLUDES: 'examples/file2.c'
         INPUT_STYLE: "LLVM"
       run: |
+        apk add --no-cache bash
         ./entrypoint.sh | tee output || true
         count1=$(grep -c "Checking file: ./examples/file1.c" output) || true
         if [ $count1 -ne 1 ]; then
