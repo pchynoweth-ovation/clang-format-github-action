@@ -1,4 +1,4 @@
-FROM ghcr.io/pchynoweth-ovation/docker-clang:main
+FROM ghcr.io/pchynoweth-ovation/docker-clang:latest
 
 COPY entrypoint.sh /entrypoint.sh
 
