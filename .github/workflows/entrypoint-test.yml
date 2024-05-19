@@ -16,7 +16,7 @@ jobs:
   test-entrypoint:
     runs-on: ubuntu-22.04
     container:
-      image: ghcr.io/pchynoweth-ovation/docker-clang:main
+      image: ghcr.io/pchynoweth-ovation/docker-clang:latest
     steps:
     - uses: actions/checkout@v4
     - name: Basic command works
